@@ -1,0 +1,22 @@
+%YAML 1.1
+---
+actions:
+- action_current_matches
+- action_match_forecast
+- utter_goodbye
+- utter_greet
+entities:
+- time
+intents:
+- goodbye
+- match_forecast
+- current_matches
+- greet
+slots:
+  time:
+    type: text
+templates:
+  utter_goodbye:
+  - text: Bye
+  utter_greet:
+  - text: Hey! I'm CricketBot. Want to know current and upcoming cricket matches?

@@ -1,0 +1,305 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greet",
+        "text": "Hello, I am CricketBot. How can I help you?"
+      },
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "intent": "greet",
+        "text": "heya"
+      },
+      {
+        "intent": "greet",
+        "text": "howdy"
+      },
+      {
+        "intent": "greet",
+        "text": "hey there"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "goodbye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "see ya"
+      },
+      {
+        "intent": "goodbye",
+        "text": "see you later"
+      },
+      {
+        "intent": "goodbye",
+        "text": "goodbye"
+      },
+      {
+        "intent": "current_matches",
+        "text": "What are current matches"
+      },
+      {
+        "intent": "current_matches",
+        "text": "What are upcoming cricket matches"
+      },
+      {
+        "intent": "current_matches",
+        "text": "which cricket match is happening right now"
+      },
+      {
+        "intent": "match_forecast",
+        "entities": [
+          {
+            "start": 24,
+            "end": 32,
+            "value": "tomorrow",
+            "entity": "time"
+          }
+        ],
+        "text": "cricket match happening tomorrow"
+      },
+      {
+        "intent": "match_forecast",
+        "entities": [
+          {
+            "start": 24,
+            "end": 29,
+            "value": "today",
+            "entity": "time"
+          }
+        ],
+        "text": "what match is happening today"
+      },
+      {
+        "intent": "match_forecast",
+        "entities": [
+          {
+            "start": 36,
+            "end": 42,
+            "value": "sunday",
+            "entity": "time"
+          }
+        ],
+        "text": "what are the matches happening this sunday"
+      },
+      {
+        "intent": "match_forecast",
+        "entities": [
+          {
+            "start": 17,
+            "end": 23,
+            "value": "monday",
+            "entity": "time"
+          }
+        ],
+        "text": "cricket match on monday"
+      },
+      {
+        "intent": "match_forecast",
+        "entities": [
+          {
+            "start": 39,
+            "end": 46,
+            "value": "tuesday",
+            "entity": "time"
+          }
+        ],
+        "text": "which cricket matches are happening on tuesday"
+      },
+      {
+        "intent": "match_forecast",
+        "entities": [
+          {
+            "start": 32,
+            "end": 41,
+            "value": "wednesday",
+            "entity": "time"
+          }
+        ],
+        "text": "what match is happening on next wednesday"
+      },
+      {
+        "intent": "match_forecast",
+        "entities": [
+          {
+            "start": 22,
+            "end": 30,
+            "value": "thursday",
+            "entity": "time"
+          }
+        ],
+        "text": "cricket match on next thursday"
+      },
+      {
+        "intent": "match_forecast",
+        "entities": [
+          {
+            "start": 9,
+            "end": 15,
+            "value": "friday",
+            "entity": "time"
+          }
+        ],
+        "text": "match on friday"
+      },
+      {
+        "intent": "match_forecast",
+        "entities": [
+          {
+            "start": 11,
+            "end": 19,
+            "value": "saturday",
+            "entity": "time"
+          }
+        ],
+        "text": "matches on saturday"
+      },
+      {
+        "intent": "current_matches",
+        "text": "current cricket matches"
+      },
+      {
+        "intent": "current_matches",
+        "text": "current matches"
+      },
+      {
+        "intent": "goodbye",
+        "text": "thank you"
+      },
+      {
+        "intent": "current_matches",
+        "text": "what are the current matches"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye"
+      },
+      {
+        "intent": "current_matches",
+        "text": "current cricket matches"
+      },
+      {
+        "intent": "current_matches",
+        "text": "what are the current cricket matches"
+      },
+      {
+        "intent": "goodbye",
+        "text": "thank you"
+      },
+      {
+        "intent": "match_forecast",
+        "entities": [
+          {
+            "start": 24,
+            "end": 32,
+            "value": "tomorrow",
+            "entity": "time",
+            "confidence": 0.7799266702457094,
+            "extractor": "CRFEntityExtractor"
+          }
+        ],
+        "text": "cricket match happening tomorrow"
+      },
+      {
+        "intent": "match_forecast",
+        "entities": [
+          {
+            "start": 24,
+            "end": 32,
+            "value": "tomorrow",
+            "entity": "time",
+            "confidence": 0.8798050436669563,
+            "extractor": "CRFEntityExtractor"
+          }
+        ],
+        "text": "cricket match happening tomorrow"
+      },
+      {
+        "intent": "match_forecast",
+        "entities": [
+          {
+            "start": 36,
+            "end": 42,
+            "value": "sunday",
+            "entity": "time",
+            "confidence": 0.8866286952642684,
+            "extractor": "CRFEntityExtractor"
+          }
+        ],
+        "text": "what are the matches happening this sunday"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye"
+      },
+      {
+        "intent": "match_forecast",
+        "entities": [
+          {
+            "start": 17,
+            "end": 23,
+            "value": "monday",
+            "entity": "time",
+            "confidence": 0.9361273792074448,
+            "extractor": "CRFEntityExtractor"
+          }
+        ],
+        "text": "cricket match on monday"
+      },
+      {
+        "intent": "match_forecast",
+        "entities": [
+          {
+            "start": 39,
+            "end": 46,
+            "value": "tuesday",
+            "entity": "time",
+            "confidence": 0.9532427496458151,
+            "extractor": "CRFEntityExtractor"
+          }
+        ],
+        "text": "which cricket matches are happening on tuesday"
+      },
+      {
+        "intent": "match_forecast",
+        "entities": [
+          {
+            "start": 24,
+            "end": 32,
+            "value": "tomorrow",
+            "entity": "time",
+            "confidence": 0.9147577948494243,
+            "extractor": "CRFEntityExtractor"
+          }
+        ],
+        "text": "cricket match happening tomorrow"
+      },
+      {
+        "intent": "goodbye",
+        "text": "thank you"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": []
+  }
+}
