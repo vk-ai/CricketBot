@@ -14,12 +14,15 @@ from rasa_sdk.executor import CollectingDispatcher
 from datetime import datetime
 
 import logging
+import os
 import requests
 import json
 import duckling
 
 API_URL = "https://cricapi.com/api/"
-API_KEY = "D62orraNNkMKUesB4rdyZ582ExK2"
+API_KEY = os.environ.get("CRICAPI_KEY", "")
+if not API_KEY:
+    raise RuntimeError("CRICAPI_KEY is not set. Copy .env.example to .env and set it (see README).")
 
 # Duckling
 d = duckling.Duckling()
