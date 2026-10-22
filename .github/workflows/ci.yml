@@ -1,0 +1,17 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - name: Python syntax check
+        run: python -m py_compile actions.py
+      - name: YAML parses
+        run: |
+          pip install pyyaml
+          python -c "import yaml,glob; [yaml.safe_load(open(f)) for f in glob.glob('*.yml')+glob.glob('data/*.yml')]"
+      - name: No hard-coded keys in actions.py
+        run: "! grep -nE 'API_KEY *= *\"[A-Za-z0-9_-]{10,}' actions.py"
